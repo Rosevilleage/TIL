@@ -66,14 +66,14 @@
    
  ### 객체 리터럴에서의 전개
    제공된 객체가 소유한 열거형 프로퍼티를 새로운 객체로 복사한다.
-    * 얕은 복제(prototype 제외) 또는 객체의 병합은 `.assign()` 보다 짧게 사용할 수 있다.
+  * 얕은 복제(prototype 제외) 또는 객체의 병합은 `.assign()` 보다 짧게 사용할 수 있다.
     ```javascript
     let obj1 = {name: 'john', age: 35};
     let obj2 = {name: 'joon', hrught: 180};
     let cloneObj = {...obj1};
     let let mergeObj = {...obj1, ...onj2}; // Object{name: 'joon', age: 35, height: 180}
     ```
-    * 그러나 spread`...` 는 `assign()` 과 달리 setters를 트리거 하지않아 `spread`가 `assign`을 대체할수는 없다.
+  * 그러나 spread`...` 는 `assign()` 과 달리 setters를 트리거 하지않아 `spread`가 `assign`을 대체할수는 없다.
     ```javascript
     let obj1 = {name: 'john', age: 35};
     let obj2 = {name: 'joon', hrught: 180};
@@ -83,9 +83,9 @@
     ```
 
  ### 이터러블 전용
-    * 전개 구문(spread 프로퍼티인 경우 제외)은 iterable 객체에만 적용된다. 
+  * 전개 구문(spread 프로퍼티인 경우 제외)은 iterable 객체에만 적용된다. 
     +예외) 이터러블이 아닌 객체도 ECMAScript의 Rest/Spread 프로퍼티 제안(stage 4)으로 인해 객체 리터럴에 속성 전개가 가능해졌다.
-    * spread는 `for..of`와 같은 방식으로 내부에서 이터레이터(iterator, 반복자)를 사용해 요소를 수집한다. 문자열에 사용한다면, `for..of` 는 문자열을 구성하는 문자를 반환하고 spread도 문자를 반환하는데 이 문자 목록은 배열 초기자(array initializer)`[...str]`로 전달된다.
+  * spread는 `for..of`와 같은 방식으로 내부에서 이터레이터(iterator, 반복자)를 사용해 요소를 수집한다. 문자열에 사용한다면, `for..of` 는 문자열을 구성하는 문자를 반환하고 spread도 문자를 반환하는데 이 문자 목록은 배열 초기자(array initializer)`[...str]`로 전달된다.
     ```javascript
     let str = 'hello';
     console.log([...str]) // h, e, l, l, o
