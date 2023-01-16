@@ -15,7 +15,7 @@
 * 여전히 없다면 생성자의 프로토타입 객체의 프로토타입 객체(Object.prototype : 자바스크립트의 모든 객체의 부모 프로토타입 객체)가 메서드가 있는지 확인하고 있다면 검색을 종료하고, 메서드를 실행시킨다.
 
 <p align='center'>
-<img src='image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-01-13%20%EC%98%A4%ED%9B%84%206.37.40.png' width=600/>
+<img src='/Users/jangchanhee/Documents/today i learned/TIL-1/til/javascript/image/스크린샷 2023-01-16 오전 10.03.53.png' width=600/>
 </p>
 
 ### 프로토타입 속성
