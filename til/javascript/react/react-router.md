@@ -106,3 +106,11 @@ export default App;
 		```
 		* 첫번째 원소의 get메서드로 특정 쿼리파라미터를 조회, set메서드를 통해 업데이트 가능. 쿼리파라미터가 존재하지 않으면 null로 조회
 		* 두번째 원소는 쿼리파라미터를 객체 형태로 업데이트할 수 있는 함수를 반환
+
+___
+**참고 사이트**
+>ReactRouter-React Router: Home v6.7.0
+* https://reactrouter.com/en/main/route/route
+
+>velog-velopert.log : velopert-React Router v6 튜토리얼
+* https://velog.io/@velopert/react-router-v6-tutorial
