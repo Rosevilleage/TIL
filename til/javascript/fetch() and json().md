@@ -48,7 +48,7 @@ fetch(resource)
 fetch(resource, options)
 ```
 
-### json()은 JSON을 반환하지 않는다.
+### json()
 json()은 이름만 봐서는 JSON객체로 변환해 줄것 같지만 그렇지 않다.
 
 Response 인터페이스의 json() 메서드는 Response 스트림을 가져와서 끝까지 읽는다. 본문 텍스트를 JSON으로 구문 분석한 결과로 해결되는 약속을 반환한다.
