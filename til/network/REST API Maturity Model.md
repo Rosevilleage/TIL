@@ -1,8 +1,8 @@
->REST API를 성숙도 모델(Maturity Model) 중심으로 정리한다. REST API 혹은 RESTful에 대한 내용은 다른 파일에서 정리한다.
+>REST API를 성숙도 모델(Maturity Model) 중심으로 정리한다. REST에 대한 내용은 다른 파일에서 정리한다.
 ## REST API (Representational State Transfer)
 로이 필딩(Roy Fielding)이 제시한 웹(http)의 장접을 최대한 활용할 수 있는 아키텍처
 
-웹에서 사용되는 데이터나 자원(Resource)을 HTTP URL로 표현하고, HTTP 프로토콜을 통해 요청과 응답을 정의하는 방식
+웹에서 사용되는 데이터나 자원(Resource)을 HTTP URL로 표현하고, HTTP method(GET, POST, PUT, DELETE)를 통해 해당 자원에 대한 CRUD Operation을 적용하며, HTTP 프로토콜을 통해 요청과 응답을 정의하는 방식
 
 ### REST API를 디자인하는 방법
 리차든슨(Leonard Richardson)이 제시한 REST API를 잘 적용하기 위한 4단계 모델
@@ -38,7 +38,8 @@
 	* GET : 서버의 데이터를 변화시키지 않는 요청에 사용
 	* POST : 요청마다 새로운 리소스 생성
 	* PUT : 요청마다 같은 리소스 반환 (용도 = 교체)
-	* PATCH : 요청마다 같은 리소스 반환 (용도 = 수정)
+	* PATCH : 요청마다 새로운 리소스 반환 (용도 = 수정)
+	* DELETE : (용도 삭제)
 
 	요청마다 같은 리소스를 반환하는 특징을 **멱등**(idempotent)하다고 한다.
 	
