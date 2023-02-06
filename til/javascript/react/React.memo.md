@@ -74,7 +74,7 @@ export default memo(Child)
 ```
 
 Child 컴포넌트를 `React.memo`로 감싼다면, 위의 리렌더링을 해소할 수 있다. <br>
-이제 Child는 Parent 컴포넌트가 렌더링 될 때마다 자신의 props가 비교해 달라졌는지 확인하고, 달리짖 않았다면 memoization한 결과를 반환할 것이다.
+이제 Child는 Parent 컴포넌트가 렌더링 될 때마다 자신의 props가 비교해 달라졌는지 확인하고, 달리지지 않았다면 memoization한 결과를 반환할 것이다.
 
 React공식문서에서는 React.memo를 오직 성능 최적화 만을 위해 사용할 것을 권장한다. 렌더링 방지를 위해 사용하면 버그를 만들 수 있다는 당부와 함께 말이다.
 
