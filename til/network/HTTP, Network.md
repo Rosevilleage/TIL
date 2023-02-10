@@ -17,8 +17,8 @@
 <p align='center'>
 <img src='../javascript/image/Protocol.png' width=800/>
 </p>
-### API
-Application Programming interface
+
+### API (Application Programming interface)
 서버의 리소스에 접근할 수 있는 접점 <br>
 일종의 메뉴판
 
